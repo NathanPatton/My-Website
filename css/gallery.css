@@ -1,0 +1,125 @@
+::selection {color:white;background:#3c4451;}
+::-moz-selection {color:white;background:#3c4451;}
+::-o-selection {color:white;background:#3c4451;}
+
+nav.primary {
+    width:auto;
+    margin:30px auto;
+    display:table;
+    margin-left: 280px;
+}
+ 
+nav.primary ul li  {
+    float:left;
+    list-style:none;
+}
+ 
+nav.primary ul li a {
+    height:39px;
+    display:block;
+    font-size:15px;
+    color:#000;
+    padding:0 10px;
+    text-decoration:none;
+    line-height:39px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;    
+}
+ 
+nav.primary li a.selected {
+    border-bottom: 3px solid #ff6528;
+}
+
+nav.primary li a:hover {
+	color: #ff6528;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	transition: color 0.5s;
+	-o-transition: color 0.5s;
+}
+ 
+.main {
+    padding:0;    
+}
+ 
+.entry {
+    position:relative;
+    float:left;
+    margin:10px;
+    cursor:pointer;
+    width:225px;
+    height:225px;
+    padding:0;
+}
+ 
+.portfolio {
+	margin: 0 auto; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+}
+ 
+.magnifier {
+    background:rgba(255,101,41,0.66) url(../images/magnifier.png) no-repeat center;
+    position:absolute;
+    top:20px; /*CHANGE THIS TO CHANGE THE HOVER BOX SIZE*/
+    left:0px;
+    bottom:20px;
+    right:0px;
+    opacity:0;
+    -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    -ms-transition:all .3s ease-in-out;
+    -o-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;
+}
+.video-hover {
+    background:rgba(255,101,41,0.66) url(../images/video.png) no-repeat center;
+    position:absolute;
+    top:10px;
+    left:10px;
+    bottom:10px;
+    right:10px;
+    opacity:0;
+    -webkit-transition:all .3s ease-in-out;
+    -moz-transition:all .3s ease-in-out;
+    -ms-transition:all .3s ease-in-out;
+    -o-transition:all .3s ease-in-out;
+    transition:all .3s ease-in-out;
+}
+ 
+.entry:hover .video-hover,
+.entry:hover .magnifier { opacity:1; }
+ 
+img {
+    max-width:100%;
+}
+ 
+.isotope-item {
+  z-index: 2;
+}
+ 
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+ 
+.isotope,
+.isotope .isotope-item {
+-webkit-transition-duration: 0.8s;
+   -moz-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+}
+ 
+.isotope {
+-webkit-transition-property: height, width;
+   -moz-transition-property: height, width;
+        transition-property: height, width;
+}
+ 
+.isotope .isotope-item {
+-webkit-transition-property: -webkit-transform, opacity;
+   -moz-transition-property:    -moz-transform, opacity;
+        transition-property:         transform, opacity;
+}
