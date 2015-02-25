@@ -1,2 +1,2 @@
-# My-Portfolio
-This is my portfolio site I use to showcase my work
+# My-Website
+This is my main website that I refer clients to.
